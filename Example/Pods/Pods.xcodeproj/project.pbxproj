@@ -68,7 +68,6 @@
 		15CFB985560E1C7B8E7705AE /* ORKTextFieldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF621B2A58A52DA698C70B5 /* ORKTextFieldView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		15F8C2957CF6612424F2D2AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA1CF97C796EFF6D35EF475 /* Foundation.framework */; };
 		167A89F106F044394008C5F5 /* ORKStep_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F63E6FDAF0D67482E7760C /* ORKStep_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		16C8E5CED20F364301778A58 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 15067A36768EF947B2843683 /* ReplaceMe.m */; };
 		17EABA22C628832CCDD61742 /* ORKTintedImageView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B57A91B4AA2CF5067A1F438 /* ORKTintedImageView_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		17F1538DEB1D4072554C241E /* ORKPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 834B1508E8EC8AD214FA57A3 /* ORKPicker.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1847E70AB708C4EF0C98A4F0 /* CLLocation+ORKJSONDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 235463A28FF55AE174BE14F0 /* CLLocation+ORKJSONDictionary.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1016,7 +1015,6 @@
 		142B650EDFC58914AEC5B337 /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
 		144A93F260AFA55985D0E384 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = ResearchKit/Localized/es.lproj; sourceTree = "<group>"; };
 		1473E3368FFB323A66CE81EE /* ORKVisualConsentStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKVisualConsentStep.m; path = ResearchKit/Consent/ORKVisualConsentStep.m; sourceTree = "<group>"; };
-		15067A36768EF947B2843683 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		15674D372C8D2D59CA63B60E /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
 		15C24E63C6491C0180875186 /* ORKResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKResult.m; path = ResearchKit/Common/ORKResult.m; sourceTree = "<group>"; };
 		160DAA922FB1F774B0B51372 /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
@@ -1617,7 +1615,6 @@
 			children = (
 				85F39CE7A188EA7E94EA8E6E /* ORKOrderedTask+RKEOrderedTask_State.h */,
 				9C42C94295995D1F7D0E113A /* ORKOrderedTask+RKEOrderedTask_State.m */,
-				15067A36768EF947B2843683 /* ReplaceMe.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -3168,7 +3165,6 @@
 			files = (
 				68B5CA1E5654D7829DB81A9A /* ORKOrderedTask+RKEOrderedTask_State.m in Sources */,
 				46D65F34191BC71209976BB4 /* Pods-ResearchKitExtension_Tests-ResearchKitExtension-dummy.m in Sources */,
-				16C8E5CED20F364301778A58 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

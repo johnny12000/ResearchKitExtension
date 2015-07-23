@@ -14,7 +14,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		A73BBE8A1B5FD51B00AC4F5A /* ORKOrderedTask+RKEOrderedTask_State.m in Sources */ = {isa = PBXBuildFile; fileRef = A73BBE861B5FD51B00AC4F5A /* ORKOrderedTask+RKEOrderedTask_State.m */; };
-		A73BBE8B1B5FD51B00AC4F5A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = A73BBE871B5FD51B00AC4F5A /* ReplaceMe.m */; };
 		F78DF3CACA5C2706CC1B5FED /* Pods_ResearchKitExtension_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C57CD8A63DB4775ECC6C7D /* Pods_ResearchKitExtension_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		63C57CD8A63DB4775ECC6C7D /* Pods_ResearchKitExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResearchKitExtension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73BBE851B5FD51B00AC4F5A /* ORKOrderedTask+RKEOrderedTask_State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORKOrderedTask+RKEOrderedTask_State.h"; sourceTree = "<group>"; };
 		A73BBE861B5FD51B00AC4F5A /* ORKOrderedTask+RKEOrderedTask_State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ORKOrderedTask+RKEOrderedTask_State.m"; sourceTree = "<group>"; };
-		A73BBE871B5FD51B00AC4F5A /* ReplaceMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		CC023F849FFE9AF62D8FCD36 /* ResearchKitExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ResearchKitExtension.podspec; path = ../ResearchKitExtension.podspec; sourceTree = "<group>"; };
 		D01F6771B4B22078AEA5429D /* Pods-ResearchKitExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResearchKitExtension_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResearchKitExtension_Tests/Pods-ResearchKitExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E18D6C78BB823C989F1D25D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			children = (
 				A73BBE851B5FD51B00AC4F5A /* ORKOrderedTask+RKEOrderedTask_State.h */,
 				A73BBE861B5FD51B00AC4F5A /* ORKOrderedTask+RKEOrderedTask_State.m */,
-				A73BBE871B5FD51B00AC4F5A /* ReplaceMe.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -275,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
-				A73BBE8B1B5FD51B00AC4F5A /* ReplaceMe.m in Sources */,
 				A73BBE8A1B5FD51B00AC4F5A /* ORKOrderedTask+RKEOrderedTask_State.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

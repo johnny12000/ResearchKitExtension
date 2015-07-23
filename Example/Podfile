@@ -3,7 +3,6 @@ use_frameworks!
 
 pod 'ResearchKit'
 
-
 target 'ResearchKitExtension_Tests', :exclusive => true do
   pod "ResearchKitExtension", :path => "../"
 

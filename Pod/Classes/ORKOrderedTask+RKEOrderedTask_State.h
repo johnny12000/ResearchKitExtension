@@ -10,7 +10,7 @@
 
 @interface ORKNavigableOrderedTask  (RKEOrderedTask_State)
 
-+ (ORKNavigableOrderedTask *) ORKNavigableOrderedTaskWithIdentifier:(NSString *)identifier
++ (ORKNavigableOrderedTask *) navigableOrderedTaskWithIdentifier:(NSString *)identifier
                                                     transitionTable:(NSDictionary*)transitionTable;
 
 @end

@@ -12,13 +12,12 @@
 
 
 
-+ (ORKNavigableOrderedTask *) ORKNavigableOrderedTaskWithIdentifier:(NSString *)identifier
++ (ORKNavigableOrderedTask *) navigableOrderedTaskWithIdentifier:(NSString *)identifier
                                                     transitionTable:(NSDictionary*)transitionTable {
     NSArray* steps = [transitionTable allKeys];
     ORKNavigableOrderedTask* result = [[ORKNavigableOrderedTask alloc] initWithIdentifier:identifier steps:steps];
     
-    id teststruct = @{ @"step" : @[@{ @"cond1": @"step2" }, @{@"cond2":@"step3"}],
-                       @"step2" : @"step3" };
+    
     
     [transitionTable enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
          ORKStepNavigationRule* navigationRule = nil;
@@ -28,7 +27,7 @@
              navigationRule = [[ORKDirectStepNavigationRule alloc] initWithDestinationStepIdentifier:nextStep.identifier];
          }
          else {
-             NSArray* transitions = (NSArray*)obj;
+             //NSArray* transitions = (NSArray*)obj;
              
              NSArray* predicates = @[  [NSPredicate predicateWithFormat:@"%K = %@" argumentArray:@[@"result", @"conditionvalue"]] ];
              NSArray* states = @[];

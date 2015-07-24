@@ -21,5 +21,10 @@
     "ResearchKitExtension": [
       "Pod/Assets/*.png"
     ]
+  },
+  "dependencies": {
+    "ResearchKit": [
+
+    ]
   }
 }

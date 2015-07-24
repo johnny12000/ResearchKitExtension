@@ -8,39 +8,29 @@
 
 // https://github.com/Specta/Specta
 
-SpecBegin(InitialSpecs)
+#import "ResearchKit.h"
+#import "ORKOrderedTask+RKEOrderedTask_State.h"
 
-describe(@"these will fail", ^{
+SpecBegin(RKEOrderedTask_States)
 
-    it(@"can do maths", ^{
-        expect(1).to.equal(2);
-    });
+describe(@"RKEOrderedTask_State", ^{
 
-    it(@"can read", ^{
-        expect(@"number").to.equal(@"string");
-    });
-    
-    it(@"will wait for 10 seconds and fail", ^{
-        waitUntil(^(DoneCallback done) {
+    it(@"should create new instance", ^{
         
-        });
-    });
-});
-
-describe(@"these will pass", ^{
-    
-    it(@"can do maths", ^{
-        expect(1).beLessThan(23);
-    });
-    
-    it(@"can read", ^{
-        expect(@"team").toNot.contain(@"I");
-    });
-    
-    it(@"will wait and succeed", ^{
-        waitUntil(^(DoneCallback done) {
-            done();
-        });
+        ORKStep* step1 = [[ORKStep alloc] initWithIdentifier:@"STEP1"];
+        ORKStep* step2 = [[ORKStep alloc] initWithIdentifier:@"STEP2"];
+        ORKStep* step3 = [[ORKStep alloc] initWithIdentifier:@"STEP3"];
+        
+        id teststruct = @{ step1 : @[@{ @"cond1" : step2 }, @{ @"cond2" : step3 }],
+                           step2 : step3,
+                           step3 : @"" };
+        
+        
+        
+        id result = [ORKNavigableOrderedTask navigableOrderedTaskWithIdentifier:@"testIdentifier"
+                                                                transitionTable:teststruct];
+        
+        expect(result).toNot.equal(nil);
     });
 });
 

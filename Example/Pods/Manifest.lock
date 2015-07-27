@@ -1,9 +1,9 @@
 PODS:
-  - Expecta (1.0.0)
+  - Expecta (1.0.2)
   - ResearchKit (1.1.2)
   - ResearchKitExtension (0.1.0):
     - ResearchKit
-  - Specta (1.0.2)
+  - Specta (1.0.3)
 
 DEPENDENCIES:
   - Expecta
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
+  Expecta: 54e8a3530add08f4f0208c111355eda7cde74a53
   ResearchKit: db2c5ff1dfe851cec9183b7c3dbc93d7373e6880
   ResearchKitExtension: 244e957330947cfa52b8c68db14b147b4c090385
-  Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
+  Specta: cf3e4188cf35375c3ee2cd03f8db8f1f4ef98234
 
 COCOAPODS: 0.37.2

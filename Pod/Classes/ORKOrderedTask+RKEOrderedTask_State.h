@@ -8,9 +8,14 @@
 
 #import "ResearchKit.h"
 
+typedef BOOL(^ConditionBlock)(id object, NSDictionary* bindings);
+
+static ConditionBlock NO_CONDITION = ^BOOL(id object, NSDictionary* bindings){ return TRUE; };
+
 @interface ORKNavigableOrderedTask  (RKEOrderedTask_State)
 
 + (ORKNavigableOrderedTask *) navigableOrderedTaskWithIdentifier:(NSString *)identifier
-                                                    transitionTable:(NSDictionary*)transitionTable;
+                                                           steps:(NSArray*)steps
+                                                      conditions:(NSArray*)conditions;
 
 @end

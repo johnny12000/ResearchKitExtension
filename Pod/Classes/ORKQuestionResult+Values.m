@@ -33,21 +33,27 @@
             break;
         }
         case ORKQuestionTypeDecimal:
-        {
-            break;
-        }
         case ORKQuestionTypeInteger:
         {
+            ORKNumericQuestionResult* numbericQuestionResult = (ORKNumericQuestionResult*)self;
+            
+            BOOL unitExists = numbericQuestionResult.unit && numbericQuestionResult.unit.length != 0;
+            
+            resultString = [NSString stringWithFormat:@"%@%@%@",
+                            numbericQuestionResult.numericAnswer,
+                            unitExists ? @" " : @"",
+                            unitExists ? numbericQuestionResult.unit : @""];
             break;
         }
         case ORKQuestionTypeBoolean:
         {
+            ORKBooleanQuestionResult* booleanQuestionResult = (ORKBooleanQuestionResult*)self;
+            resultString = booleanQuestionResult.booleanAnswer ? @"Y" : @"N";
             break;
         }
         case ORKQuestionTypeText:
         {
             ORKTextQuestionResult* textQuestionResult = (ORKTextQuestionResult*)self;
-            
             resultString = textQuestionResult.textAnswer;
             
             break;

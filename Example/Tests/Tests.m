@@ -81,6 +81,34 @@ describe(@"ORKQuestionResult_Values", ^{
         
         expect(result).to.equal(@"CHOICE1,CHOICE2");
     });
+    
+    it(@"should return number string for numeric answers with unit", ^{
+        ORKNumericQuestionResult* numericAnswer = [ORKNumericQuestionResult new];
+        numericAnswer.questionType = ORKQuestionTypeInteger;
+        numericAnswer.numericAnswer = [[NSNumber alloc] initWithInteger:5];
+        numericAnswer.unit = @"TEST";
+        
+        NSString* result = [numericAnswer getAnswerString];
+        expect(result).to.equal(@"5 TEST");
+    });
+    
+    it(@"should return number string for numeric answers without unit", ^{
+        ORKNumericQuestionResult* numericAnswer = [ORKNumericQuestionResult new];
+        numericAnswer.questionType = ORKQuestionTypeInteger;
+        numericAnswer.numericAnswer = [[NSNumber alloc] initWithInteger:5];
+        
+        NSString* result = [numericAnswer getAnswerString];
+        expect(result).to.equal(@"5");
+    });
+    
+    it(@"should return Y/N string for boolean", ^{
+        ORKBooleanQuestionResult* boolResult = [ORKBooleanQuestionResult new];
+        boolResult.questionType = ORKQuestionTypeBoolean;
+        boolResult.booleanAnswer = [[NSNumber alloc] initWithBool:TRUE];
+        
+        NSString* result = [boolResult getAnswerString];
+        expect(result).to.equal(@"Y");
+    });
 });
 
 SpecEnd

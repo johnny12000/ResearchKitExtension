@@ -48,6 +48,39 @@ describe(@"ORKQuestionResult_Values", ^{
         
         expect(result).to.equal(@"");
     });
+    
+    it(@"should return value for scale answer", ^{
+        
+        ORKScaleQuestionResult* scaleQuestionResult = [[ORKScaleQuestionResult alloc] init];
+        scaleQuestionResult.scaleAnswer = [[NSNumber alloc] initWithFloat:1.2];
+        scaleQuestionResult.questionType = ORKQuestionTypeScale;
+        
+        NSString* result = [scaleQuestionResult getAnswerString];
+        
+        expect(result).to.equal(@"1.2");
+    });
+    
+    it(@"should return choice for choices answer", ^{
+        
+        ORKChoiceQuestionResult* choiceQuestionResult = [ORKChoiceQuestionResult new];
+        choiceQuestionResult.questionType = ORKQuestionTypeSingleChoice;
+        choiceQuestionResult.choiceAnswers = @[@"CHOICE"];
+        
+        NSString* result = [choiceQuestionResult getAnswerString];
+        
+        expect(result).to.equal(@"CHOICE");
+    });
+    
+    it(@"should return selected choices string for choices answer", ^{
+        
+        ORKChoiceQuestionResult* choiceQuestionResult = [ORKChoiceQuestionResult new];
+        choiceQuestionResult.questionType = ORKQuestionTypeMultipleChoice;
+        choiceQuestionResult.choiceAnswers = @[@"CHOICE1", @"CHOICE2"];
+        
+        NSString* result = [choiceQuestionResult getAnswerString];
+        
+        expect(result).to.equal(@"CHOICE1,CHOICE2");
+    });
 });
 
 SpecEnd

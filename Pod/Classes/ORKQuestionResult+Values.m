@@ -21,14 +21,15 @@
         }
         case ORKQuestionTypeScale:
         {
+            ORKScaleQuestionResult* scaleQuestionResult = (ORKScaleQuestionResult*)self;
+            resultString = [NSString stringWithFormat:@"%@", scaleQuestionResult.scaleAnswer];
             break;
         }
         case ORKQuestionTypeSingleChoice:
-        {
-            break;
-        }
         case ORKQuestionTypeMultipleChoice:
         {
+            ORKChoiceQuestionResult* choiceQuestionResult = (ORKChoiceQuestionResult*)self;
+            resultString = [choiceQuestionResult.choiceAnswers componentsJoinedByString:@","];
             break;
         }
         case ORKQuestionTypeDecimal:

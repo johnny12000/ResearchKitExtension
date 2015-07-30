@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+There are no special requirements, this is just a playground for ResearchKit. Any suggestions are welcome.
+
 ## Installation
 
 ResearchKitExtension is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +24,7 @@ pod "ResearchKitExtension"
 
 ## Author
 
-Nikola Ristic, n.ristic@youngculture.com
+Nikola Ristic, ristic.nikola@outlook.com
 
 ## License
 

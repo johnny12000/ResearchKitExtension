@@ -1,6 +1,0 @@
-framework module ResearchKitExtension {
-  umbrella header "Pods-ResearchKitExtension_Tests-ResearchKitExtension-umbrella.h"
-
-  export *
-  module * { export * }
-}

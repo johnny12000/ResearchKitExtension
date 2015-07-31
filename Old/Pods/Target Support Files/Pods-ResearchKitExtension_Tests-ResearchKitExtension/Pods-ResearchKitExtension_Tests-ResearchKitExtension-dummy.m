@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_ResearchKitExtension_Tests_ResearchKitExtension : NSObject
-@end
-@implementation PodsDummy_Pods_ResearchKitExtension_Tests_ResearchKitExtension
-@end
